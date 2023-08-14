@@ -1,13 +1,11 @@
 ---
-dependencies: []
-
 galaxy_info:
   role_name: security
-  author: geerlingguy
+  author: asapdotid
   description: Security software installation and configuration.
-  company: "Midwestern Mac, LLC"
+  company: none
   license: "license (BSD, MIT)"
-  min_ansible_version: 2.4
+  min_ansible_version: "2.4"
   platforms:
     - name: EL
       versions:
@@ -21,6 +19,7 @@ galaxy_info:
     - name: Ubuntu
       versions:
         - all
+
   galaxy_tags:
     - system
     - security
@@ -31,3 +30,5 @@ galaxy_info:
     - apt
     - dnf
     - hardening
+
+dependencies: []
