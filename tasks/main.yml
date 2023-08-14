@@ -1,5 +1,5 @@
 ---
-# Autoupdate
-- include_tasks: "autoupdate-{{ ansible_os_family | lower }}.yml"
+- name: System autoupdate
+  ansible.builtin.include_tasks: "autoupdate-{{ ansible_os_family | lower }}.yml"
   when:
     - security_autoupdate_enabled | bool
